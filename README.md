@@ -65,6 +65,15 @@ body {
 
 There is a 5 pixel gap at the bottom of the Image in the card__hero section which I don't understand why it's there.
 
+I still need to add mobile media queries to handle a smaller viewport.
+
+The music icon doesn't size down when the viewport height reduces
+
+My use of vh sizes sees the content of the card overlap each other as the viewport height reduces.
+
+I don't understand why the footer moves off the bottom as the viewport height reduces to smaller that the card size as it is positioned absolutely at the bottom.
+
+
 ### Continued development
 
 Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
