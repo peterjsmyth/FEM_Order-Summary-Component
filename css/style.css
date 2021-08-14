@@ -1,0 +1,274 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+:root {
+  --txt: hsl(224,23%,55%);
+  --titles: hsl(223,47%,23%);
+  --bkg-order: hsl(225,100%,98%);
+  --bkg-page: hsl(225,100%,94%);
+  --bkg-btn: hsl(245,75%,52%);
+  --bkg-btn-hover: hsla(245,75%,52%,0.65);
+  --bkg-light: hsl(255, 100%, 100%);
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  background-image: url("../images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: var(--bkg-page);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 1.6rem;
+  color: var(--txt);
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.box-red {
+  border: 1px red solid;
+}
+
+.box-blue {
+  border: 1px blue solid;
+}
+
+.box-green {
+  border: 1px green solid;
+}
+
+.txt-bold {
+  font-weight: 700;
+}
+
+.txt-xbold {
+  font-weight: 900;
+}
+
+.card {
+  max-width: 450px;
+  background-color: var(--bkg-light);
+  border-radius: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 15px 30px rgba(56, 41, 224, 0.65);
+          box-shadow: 0px 15px 30px rgba(56, 41, 224, 0.65);
+}
+
+.card__hero__image {
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+}
+
+.card__content {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card__content__title {
+  font-size: clamp(2rem, 2vw, 3rem);
+  padding: 2rem 0;
+  color: var(--titles);
+}
+
+.card__content__text {
+  font-size: 1.6rem;
+  text-align: center;
+  padding-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.card__plan {
+  width: 80%;
+  height: 10vh;
+  background-color: var(--bkg-order);
+  border-radius: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card__plan__icon {
+  width: 25%;
+}
+
+.card__plan__icon__image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card__plan__content {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.card__plan__content__title {
+  color: var(--titles);
+}
+
+.card__plan__change {
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card__plan__change__link:hover {
+  text-decoration: none;
+  color: rgba(56, 41, 224, 0.65);
+}
+
+.card__buttons {
+  width: 80%;
+  min-height: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card__buttons__payment {
+  background-color: var(--bkg-btn);
+  color: var(--bkg-light);
+  width: 100%;
+  height: 5rem;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 5rem;
+  border-style: none;
+  border-radius: 1rem;
+  text-decoration: none;
+  margin-bottom: 2rem;
+  -webkit-box-shadow: 0px 15px 30px rgba(56, 41, 224, 0.65);
+          box-shadow: 0px 15px 30px rgba(56, 41, 224, 0.65);
+  -webkit-transition: background-color .3s ease;
+  transition: background-color .3s ease;
+}
+
+.card__buttons__payment:hover {
+  background-color: var(--bkg-btn-hover);
+}
+
+.card__buttons__cancel {
+  height: 5rem;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 5rem;
+  text-decoration: none;
+  color: var(--txt);
+}
+
+.card__buttons__cancel:hover {
+  color: var(--titles);
+  font-weight: 700;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  color: var(--titles);
+}
+/*# sourceMappingURL=style.css.map */
