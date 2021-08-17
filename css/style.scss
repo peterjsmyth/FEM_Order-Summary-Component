@@ -58,9 +58,10 @@ html {
 }
 
 body {
+    min-width: 375px;
     width: 100vw;
-    min-height: 100vh;    
-    // position: relative;
+    min-height: 900px;    
+    position: relative;
     background-image: url("../images/pattern-background-desktop.svg");
     background-repeat: no-repeat;
     background-size: contain;
@@ -98,15 +99,18 @@ body {
 
 // ----- Block - Element - Modifiers -----
 .card {
+    // width: 80%;
+    
     max-width: 450px;
     background-color: var(--bkg-light);
     border-radius: 2rem;
     @include flex-column-center;
-    box-shadow: 0px 15px 30px hsla(245deg, 75%, 52%, .65);
+    box-shadow: 0px 5px 20px hsla(245deg, 75%, 52%, .65);
     &__hero {
         &__image {
             border-top-left-radius: 2rem;
             border-top-right-radius: 2rem;
+            width: 100%;
         }
     }
     &__content {
@@ -126,7 +130,7 @@ body {
     }
     &__plan {
         width: 80%;
-        height: 10vh;
+        height: 90px;
         background-color: var(--bkg-order);
         border-radius: 2rem;
         @include flex-row-center;
@@ -159,7 +163,7 @@ body {
     }
     &__buttons {
         width: 80%;
-        min-height: 20vh;
+        min-height: 180px;
         @include flex-column-center;
         &__payment {
             background-color: var(--bkg-btn);

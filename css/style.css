@@ -35,8 +35,10 @@ html {
 }
 
 body {
+  min-width: 375px;
   width: 100vw;
-  min-height: 100vh;
+  min-height: 900px;
+  position: relative;
   background-image: url("../images/pattern-background-desktop.svg");
   background-repeat: no-repeat;
   background-size: contain;
@@ -100,13 +102,14 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-shadow: 0px 15px 30px rgba(56, 41, 224, 0.65);
-          box-shadow: 0px 15px 30px rgba(56, 41, 224, 0.65);
+  -webkit-box-shadow: 0px 5px 20px rgba(56, 41, 224, 0.65);
+          box-shadow: 0px 5px 20px rgba(56, 41, 224, 0.65);
 }
 
 .card__hero__image {
   border-top-left-radius: 2rem;
   border-top-right-radius: 2rem;
+  width: 100%;
 }
 
 .card__content {
@@ -141,7 +144,7 @@ body {
 
 .card__plan {
   width: 80%;
-  height: 10vh;
+  height: 90px;
   background-color: var(--bkg-order);
   border-radius: 2rem;
   display: -webkit-box;
@@ -214,7 +217,7 @@ body {
 
 .card__buttons {
   width: 80%;
-  min-height: 20vh;
+  min-height: 180px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
