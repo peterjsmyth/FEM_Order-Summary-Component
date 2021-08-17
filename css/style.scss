@@ -198,7 +198,12 @@ body {
 }
 
 .footer {
+    width: 90%;
+    max-width: 450px;
     position: absolute;
     bottom: 0;
     color: var(--titles);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
