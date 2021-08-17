@@ -64,9 +64,11 @@ body {
 
 There is a 5 pixel gap at the bottom of the Image in the card__hero section which I don't understand why it's there.
 
-My use of vh sizes sees the content of the card overlap each other as the viewport height reduces. ___Resolved: Removed VH sizes___
+My use of vh sizes sees the content of the card overlap each other as the viewport height reduces. 
+___Resolved: Removed VH sizes___
 
-I don't understand why the footer moves off the bottom as the viewport height reduces to smaller than the card size as it is positioned absolutely at the bottom. ___Resolved: Parent wasn't positioned___
+I don't understand why the footer moves off the bottom as the viewport height reduces to smaller than the card size as it is positioned absolutely at the bottom. 
+___Resolved: Parent wasn't positioned___
 
 
 ### Continued development
