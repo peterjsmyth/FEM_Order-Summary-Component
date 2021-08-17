@@ -86,6 +86,7 @@ body {
 }
 
 .card {
+  width: 90%;
   max-width: 450px;
   background-color: var(--bkg-light);
   border-radius: 2rem;
