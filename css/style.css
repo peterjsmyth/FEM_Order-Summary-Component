@@ -103,14 +103,15 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-shadow: 0px 5px 20px rgba(56, 41, 224, 0.65);
-          box-shadow: 0px 5px 20px rgba(56, 41, 224, 0.65);
+  -webkit-box-shadow: 0px 5px 20px rgba(56, 41, 224, 0.35);
+          box-shadow: 0px 5px 20px rgba(56, 41, 224, 0.35);
 }
 
 .card__hero__image {
   border-top-left-radius: 2rem;
   border-top-right-radius: 2rem;
   width: 100%;
+  display: block;
 }
 
 .card__content {

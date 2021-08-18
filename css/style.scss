@@ -104,12 +104,13 @@ body {
     background-color: var(--bkg-light);
     border-radius: 2rem;
     @include flex-column-center;
-    box-shadow: 0px 5px 20px hsla(245deg, 75%, 52%, .65);
+    box-shadow: 0px 5px 20px hsla(245deg, 75%, 52%, .35);
     &__hero {
         &__image {
             border-top-left-radius: 2rem;
             border-top-right-radius: 2rem;
             width: 100%;
+            display: block;
         }
     }
     &__content {
